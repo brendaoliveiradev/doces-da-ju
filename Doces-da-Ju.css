@@ -1,0 +1,246 @@
+body {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: white;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    padding: 0; 
+    
+}
+
+.instagram {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;      /* ajuste o tamanho conforme desejar */
+    height: auto;
+    border-radius: 10px;
+    z-index: 1000;    /* garante que fique acima dos outros elementos */
+}
+
+.whatsapp {
+    position: fixed;
+    top: 27px;
+    right: 65px;     /* ajuste a posição horizontal conforme desejar */
+    width: 35px;      /* ajuste o tamanho conforme desejar */
+    height: auto;
+    border-radius: 10px;
+    z-index: 1000;    /* garante que fique acima dos outros elementos */
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    width: 150px;
+    height: auto;
+    margin-left: 60px;
+    margin-right: 0px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    z-index: 1000;   
+}
+
+.header-content {
+    flex: 1;
+    background-color: #fffafa;
+    color: Crimson;
+    padding: 20px;
+    text-align: center;
+    padding-right: 0px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: SaddleBrown; /* Cor do retângulo */
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+nav ul li a:hover {
+    background-color: Peru; /* Cor ao passar o mouse */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus,
+nav a:active {
+    border-bottom: 2px solid white;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-size: 25px;
+    color: Crimson;
+}
+
+#sobrenos p {
+    color: #6d2c00; /* Escolha a cor desejada */
+    font-weight: bold;
+}   
+
+.imagens-sobrenos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagens-sobrenos img {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.imagens-sobrenos img:hover {
+    transform: scale(1.6);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+details {
+    margin-bottom: 20px;
+    border: 1px solid #ffd5d8;
+    border-radius: 6px;
+    background-color: SaddleBrown;
+    padding: 10px 15px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+details ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form {
+    background-color: SaddleBrown;      /* Cor de fundo desejada */
+    padding: 50px;               /* Espaçamento interno */
+    border-radius: 12px;         /* Cantos arredondados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra suave */
+    max-width: 1000px;            /* Largura máxima opcional */
+    margin: 0 auto;              /* Centraliza o formulário */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: Crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: Peru;
+}
+
+form button:focus {
+    outline: 3px solid #ffe3e6;
+    outline-offset: 2px;
+}
+
+footer {
+    font-family: "Merriweather", serif !important;
+    background-color: SaddleBrown;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}
