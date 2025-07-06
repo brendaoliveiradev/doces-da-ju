@@ -23,24 +23,23 @@ header {
     position: fixed;
     top: 30px;
     right: 30px;
-    width: 30px;      /* ajuste o tamanho conforme desejar */
+    width: 30px;      
     height: auto;
     border-radius: 10px;
-    z-index: 1000;    /* garante que fique acima dos outros elementos */
+    z-index: 1000;    
 }
 
 .whatsapp {
     position: fixed;
     top: 27px;
-    right: 65px;     /* ajuste a posição horizontal conforme desejar */
-    width: 35px;      /* ajuste o tamanho conforme desejar */
+    right: 65px;     
+    width: 35px;     
     height: auto;
     border-radius: 10px;
-    z-index: 1000;    /* garante que fique acima dos outros elementos */
+    z-index: 1000;    
 }
 
 .logo {
-    position: fixed;
     top: 10px;
     width: 150px;
     height: auto;
@@ -75,7 +74,7 @@ nav ul {
 nav ul li a {
     display: inline-block;
     padding: 8px 20px;
-    background-color: SaddleBrown; /* Cor do retângulo */
+    background-color: SaddleBrown; 
     color: white;
     border-radius: 8px;
     text-decoration: none;
@@ -85,7 +84,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: Peru; /* Cor ao passar o mouse */
+    background-color: Peru; 
 }
 
 nav a {
@@ -123,7 +122,7 @@ h2 {
 }
 
 #sobrenos p {
-    color: #6d2c00; /* Escolha a cor desejada */
+    color: #6d2c00; 
     font-weight: bold;
 }   
 
@@ -135,7 +134,7 @@ h2 {
 }
 
 .imagens-sobrenos img {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
+    width: 120px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -175,12 +174,12 @@ form label {
 }
 
 form {
-    background-color: SaddleBrown;      /* Cor de fundo desejada */
-    padding: 50px;               /* Espaçamento interno */
-    border-radius: 12px;         /* Cantos arredondados */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Sombra suave */
-    max-width: 1000px;            /* Largura máxima opcional */
-    margin: 0 auto;              /* Centraliza o formulário */
+    background-color: SaddleBrown;      
+    padding: 50px;               
+    border-radius: 12px;         
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+    max-width: 1000px;            
+    margin: 0 auto;              
 }
 
 form input,
@@ -232,7 +231,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Responsividade para dispositivos móveis */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
